@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сериалы</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous">
+    </script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+<body>
+<header class="header">
+    <div class="header-left">
+        <a href="#" class="logo">
+            <span>Poisk</span>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 x="0px" y="0px" width="12px" height="12px"
+                 viewBox="0 0 41.999 41.999" xml:space="preserve" fill="#d73d31">
+            <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
+            c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20
+            c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z">
+            </path>
+        </svg>
+            <span>Video</span>
+        </a>
+        <div class="header-block">
+            <form class="header-block-search">
+                <div class="search">
+                    <input type="search" name="search" placeholder="Поиск по сайту">
+                    <button type="submit" value="">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             x="0px" y="0px" width="20px" height="20px"
+                             viewBox="0 0 56.966 56.966"  xml:space="preserve" fill="#8c898f">
+                            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                                s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                                c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                                s-17-7.626-17-17S14.61,6,23.984,6z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+<!--            <nav class="header-block-nav">-->
+<!--                <a href="#" class="nav-item">Фильмы</a>-->
+<!--                <a href="#" class="nav-item active">Сериалы</a>-->
+<!--                <a href="#" class="nav-item">Мультфильмы</a>-->
+<!--                <a href="#" class="nav-item">Клипы</a>-->
+<!--                <a href="#" class="nav-item">Спорт</a>-->
+<!--                <a href="#" class="nav-item">Блогеры</a>-->
+<!--            </nav>-->
+        </div>
+    </div>
+
+    <div class="account">
+        <div class="account-img">
+            <img src="img/profile.png" alt="">
+        </div>
+        <span>Avergoal</span>
+    </div>
+</header>
+<div style="margin-bottom: 30px">
+    <input type="button" value="White" id="toggle-white" />
+    <input type="button" value="Darck" id="toggle-darck" />
+    <input type="button" value="Neon" id="toggle-neon" />
+</div>
+<section>
+
+    <div class="sidebar">
+        <div class="film-description">
+            <div class="film-description-header">
+                <div class="film-cover">
+                    <img src="img/cover.png" alt="">
+                </div>
+                <div class="film-details">
+                    <div class="film-details-name">
+                        <span class="film-category">Сериалы</span>
+                        <a href="#" class="film-name">Мир дикого запада</a>
+                    </div>
+                    <div class="film-details-plus">
+                        <span>Сезон</span>
+                        <div class="film-pagination">
+                            <a href="#" class="film-pagination-item active">1</a>
+                            <a href="#" class="film-pagination-item">2</a>
+                        </div>
+                    </div>
+                    <div class="film-details-plus">
+                        <span>Серия</span>
+                        <div class="film-pagination">
+                            <a href="#" class="film-pagination-item active">1</a>
+                            <a href="#" class="film-pagination-item">2</a>
+                            <a href="#" class="film-pagination-item">3</a>
+                            <a href="#" class="film-pagination-item">4</a>
+                            <a href="#" class="film-pagination-item">5</a>
+                            <a href="#" class="film-pagination-item">6</a>
+                            <a href="#" class="film-pagination-item">7</a>
+                            <a href="#" class="film-pagination-item">8</a>
+                            <a href="#" class="film-pagination-item">9</a>
+                            <a href="#" class="film-pagination-item">10</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="film-description-body">
+                <h3 class="h3-block">О сериале</h3>
+                <div class="collapse">
+                    <div class="expand-button">
+                        Читать далее
+                    </div>
+                    <p>
+                        «Мир Ди́кого запада», также «Западный мир» (англ. Westworld) — американский фантастический сериал телеканала HBO, созданный Джонатаном Ноланом и Лизой Джой. Это адаптация одноименного фильма, написанного и поставленного Майклом Крайтоном в 1973 году...
+                    </p>
+                    <p class="expandable-content">
+                        «Мир Ди́кого запада», также «Западный мир» (англ. Westworld) — американский фантастический сериал телеканала HBO, созданный Джонатаном Ноланом и Лизой Джой. Это адаптация одноименного фильма, написанного и поставленного Майклом Крайтоном в 1973 году
+                    </p>
+                </div>
+                <h3 class="h3-block">Жанр: <span>фантастика, драма, детектив, Вестерн</span></h3>
+                <h3 class="h3-block">Страна: <span>США</span></h3>
+                <h3 class="h3-block">Год выпуска: <span>2013</span></h3>
+                <h3 class="h3-block">Режиссёры: <span>Джонатан Нолан, Винченцо Натали, Лиза Джой, Мишель Макларен, Нил Маршалл, Фред Туа</span></h3>
+            </div>
+        </div>
+        <a href="#" class="sidebar__film-link">
+            <div class="film-link-img film-img-mobile">
+                <img src="img/film1.jpg" alt="">
+            </div>
+            <div class="film-name">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                Мир дикого запада ceзон 1 серия
+            </div>
+            <div class="film-link-indent">
+                <div class="film-name film-name-mobile">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                    Мир дикого запада ceзон 1 серия
+                </div>
+                <div class="text-href">
+                    kino-fs.me›…serialy…serialy/mir_dikogo_zapada…1-0…
+                </div>
+                <div class="film-link-box">
+                    <div class="film-link-img">
+                        <img src="img/film1.jpg" alt="">
+                    </div>
+                    <div class="film-link-text">
+                        <p>Зарубежные сериалы. Режиссер: Джонатан Нолан, Джонни Кэмпбелл, Ричард Дж. Льюис. «Мир дикого запада», это новое слово в индустрии развлечений, новый парк...</p>
+                        <div class="film-link-params">
+                            <div class="film-time">1:31:24</div>
+                            <div class="divider-circle"></div>
+                            <div class="film-date">06.04.2013</div>
+                            <div class="divider-circle divider-circle-mobile"></div>
+                            <div class="film-size film-size-mobile">HD 720</div>
+                        </div>
+                        <div class="film-size">HD 720</div>
+                    </div>
+                </div>
+            </div>
+
+        </a>
+        <a href="#" class="sidebar__film-link">
+            <div class="film-link-img film-img-mobile">
+                <img src="img/film2.jpg" alt="">
+            </div>
+            <div class="film-name">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                Мир дикого запада ceзон 1 серия
+            </div>
+            <div class="film-link-indent">
+                <div class="film-name film-name-mobile">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                    Мир дикого запада ceзон 1 серия
+                </div>
+                <div class="text-href">
+                    kino-fs.me›…serialy…serialy/mir_dikogo_zapada…1-0…
+                </div>
+                <div class="film-link-box">
+                    <div class="film-link-img">
+                        <img src="img/film2.jpg" alt="">
+                    </div>
+                    <div class="film-link-text">
+                        <p>Зарубежные сериалы. Режиссер: Джонатан Нолан, Джонни Кэмпбелл, Ричард Дж. Льюис. «Мир дикого запада», это новое слово в индустрии развлечений, новый парк...</p>
+                        <div class="film-link-params">
+                            <div class="film-time">1:31:24</div>
+                            <div class="divider-circle"></div>
+                            <div class="film-date">06.04.2013</div>
+                            <div class="divider-circle divider-circle-mobile"></div>
+                            <div class="film-size film-size-mobile">HD 720</div>
+                        </div>
+                        <div class="film-size">HD 720</div>
+                    </div>
+                </div>
+            </div>
+
+        </a>
+        <a href="#" class="sidebar__film-link">
+            <div class="film-link-img film-img-mobile">
+                <img src="img/film3.jpg" alt="">
+            </div>
+            <div class="film-name">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                Мир дикого запада ceзон 1 серия
+            </div>
+            <div class="film-link-indent">
+                <div class="film-name film-name-mobile">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                    Мир дикого запада ceзон 1 серия
+                </div>
+                <div class="text-href">
+                    kino-fs.me›…serialy…serialy/mir_dikogo_zapada…1-0…
+                </div>
+                <div class="film-link-box">
+                    <div class="film-link-img">
+                        <img src="img/film3.jpg" alt="">
+                    </div>
+                    <div class="film-link-text">
+                        <p>Зарубежные сериалы. Режиссер: Джонатан Нолан, Джонни Кэмпбелл, Ричард Дж. Льюис. «Мир дикого запада», это новое слово в индустрии развлечений, новый парк...</p>
+                        <div class="film-link-params">
+                            <div class="film-time">1:31:24</div>
+                            <div class="divider-circle"></div>
+                            <div class="film-date">06.04.2013</div>
+                            <div class="divider-circle divider-circle-mobile"></div>
+                            <div class="film-size film-size-mobile">HD 720</div>
+                        </div>
+                        <div class="film-size">HD 720</div>
+                    </div>
+                </div>
+            </div>
+
+        </a>
+        <div class="sidebar__film-carousel">
+            <h2>Рекомендации</h2>
+            <div class="carousel-wrap">
+                <div class="owl-carousel" id="owl-carousel1">
+                    <a href="#" class="item">
+                        <img src="img/owl1.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl2.png">
+                        <div class="film-name">Очень странные дела</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#"class="item">
+                        <img src="img/owl3.png">
+                        <div class="film-name">Табу</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl4.png">
+                        <div class="film-name">Враг внутри</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl1.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl2.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl3.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl4.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl1.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl2.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl3.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl4.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="sidebar__film-link">
+            <div class="film-link-img film-img-mobile">
+                <img src="img/film1.jpg" alt="">
+            </div>
+            <div class="film-name">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                Мир дикого запада ceзон 1 серия
+            </div>
+            <div class="film-link-indent">
+                <div class="film-name film-name-mobile">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                    Мир дикого запада ceзон 1 серия
+                </div>
+                <div class="text-href">
+                    kino-fs.me›…serialy…serialy/mir_dikogo_zapada…1-0…
+                </div>
+                <div class="film-link-box">
+                    <div class="film-link-img">
+                        <img src="img/film1.jpg" alt="">
+                    </div>
+                    <div class="film-link-text">
+                        <p>Зарубежные сериалы. Режиссер: Джонатан Нолан, Джонни Кэмпбелл, Ричард Дж. Льюис. «Мир дикого запада», это новое слово в индустрии развлечений, новый парк...</p>
+                        <div class="film-link-params">
+                            <div class="film-time">1:31:24</div>
+                            <div class="divider-circle"></div>
+                            <div class="film-date">06.04.2013</div>
+                            <div class="divider-circle divider-circle-mobile"></div>
+                            <div class="film-size film-size-mobile">HD 720</div>
+                        </div>
+                        <div class="film-size">HD 720</div>
+                    </div>
+                </div>
+            </div>
+
+        </a>
+        <a href="#" class="sidebar__film-link">
+            <div class="film-link-img film-img-mobile">
+                <img src="img/film1.jpg" alt="">
+            </div>
+            <div class="film-name">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                Мир дикого запада ceзон 1 серия
+            </div>
+            <div class="film-link-indent">
+                <div class="film-name film-name-mobile">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                    Мир дикого запада ceзон 1 серия
+                </div>
+                <div class="text-href">
+                    kino-fs.me›…serialy…serialy/mir_dikogo_zapada…1-0…
+                </div>
+                <div class="film-link-box">
+                    <div class="film-link-img">
+                        <img src="img/film1.jpg" alt="">
+                    </div>
+                    <div class="film-link-text">
+                        <p>Зарубежные сериалы. Режиссер: Джонатан Нолан, Джонни Кэмпбелл, Ричард Дж. Льюис. «Мир дикого запада», это новое слово в индустрии развлечений, новый парк...</p>
+                        <div class="film-link-params">
+                            <div class="film-time">1:31:24</div>
+                            <div class="divider-circle"></div>
+                            <div class="film-date">06.04.2013</div>
+                            <div class="divider-circle divider-circle-mobile"></div>
+                            <div class="film-size film-size-mobile">HD 720</div>
+                        </div>
+                        <div class="film-size">HD 720</div>
+                    </div>
+                </div>
+            </div>
+
+        </a>
+        <a href="#" class="sidebar__film-link">
+            <div class="film-link-img film-img-mobile">
+                <img src="img/film1.jpg" alt="">
+            </div>
+            <div class="film-name">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                Мир дикого запада ceзон 1 серия
+            </div>
+            <div class="film-link-indent">
+                <div class="film-name film-name-mobile">
+                <span class="film-icon">
+                    <img src="img/favicon.png" alt="">
+                </span>
+                    Мир дикого запада ceзон 1 серия
+                </div>
+                <div class="text-href">
+                    kino-fs.me›…serialy…serialy/mir_dikogo_zapada…1-0…
+                </div>
+                <div class="film-link-box">
+                    <div class="film-link-img">
+                        <img src="img/film1.jpg" alt="">
+                    </div>
+                    <div class="film-link-text">
+                        <p>Зарубежные сериалы. Режиссер: Джонатан Нолан, Джонни Кэмпбелл, Ричард Дж. Льюис. «Мир дикого запада», это новое слово в индустрии развлечений, новый парк...</p>
+                        <div class="film-link-params">
+                            <div class="film-time">1:31:24</div>
+                            <div class="divider-circle"></div>
+                            <div class="film-date">06.04.2013</div>
+                            <div class="divider-circle divider-circle-mobile"></div>
+                            <div class="film-size film-size-mobile">HD 720</div>
+                        </div>
+                        <div class="film-size">HD 720</div>
+                    </div>
+                </div>
+            </div>
+
+        </a>
+    </div>
+    <div class="block-video">
+        <div class="wrapper">
+            <div class="video">
+                <div class="share">
+                    <img src="img/share.png" alt="">
+                </div>
+                <video id="video">
+                    <source src='https://www.w3schools.com/tags/mov_bbb.mp4'>
+                </video>
+                <div class="controls">
+                    <div class='progress'>
+                        <div class='progress-filled'></div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-left">
+                            <div class="playpause pause"></div>
+                            <div class="volume v-off">
+                                <input class="volume-input" type="range">
+                            </div>
+                            <div class="time-progress">
+                                <span>0:01 </span>/<span> 1:31:24</span>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="settings">
+                                <img src="img/settings.png" alt="">
+                            </div>
+                            <div class="fullscreen fa fa-expand"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="series-block">
+            <div class="series-block-header">
+                <div class="film-name">Мир дикого запада</div>
+                <div class="film-data">
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                    <a href="#" class="film-source">
+                        hdlava.me
+                    </a>
+                </div>
+            </div>
+            <div class="series-box">
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film5.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film6.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film7.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film8.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film1.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film2.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film3.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film4.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film5.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film6.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film7.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film8.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film1.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film2.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film3.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+                <a href="#" class="series-box-item">
+                    <div class="series-img">
+                        <img src="img/film4.jpg" alt="">
+                    </div>
+                    <div class="film-name">Мир дикого запада</div>
+                    <div class="film-current">
+                        <div class="season-current">2 сезон</div>
+                        <div class="divider-circle"></div>
+                        <div class="series-current">1 серия</div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="page__film-carousel">
+            <h2>Популярные сериалы</h2>
+            <div class="select-box">
+                <div class="select-item">
+                    <div class="select-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#949494" id="baseline-arrow_drop_down-24px"
+                             width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Path_20" d="M7 10l5 5 5-5z" class="cls-1" data-name="Path 20"/>
+                        </svg>
+                    </div>
+                    <select name="select">
+                        <option value="value">Все жанры</option>
+                        <option value="value1">Комедия</option>
+                        <option value="value2">Боевик</option>
+                        <option value="value3">Драма</option>
+                    </select>
+                </div>
+                <div class="select-item">
+                    <div class="select-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#949494" id="baseline-arrow_drop_down-24px"
+                             width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Path_20" d="M7 10l5 5 5-5z" class="cls-1" data-name="Path 20"/>
+                        </svg>
+                    </div>
+                    <select name="select">
+                        <option value="value">За все время</option>
+                        <option value="value1">2005</option>
+                        <option value="value2">2017</option>
+                        <option value="value3">1998</option>
+                    </select>
+                </div>
+                <div class="select-item">
+                    <div class="select-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#949494" id="baseline-arrow_drop_down-24px"
+                             width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Path_20" d="M7 10l5 5 5-5z" class="cls-1" data-name="Path 20"/>
+                        </svg>
+                    </div>
+                    <select name="select">
+                        <option value="value">Любой рейтинг</option>
+                        <option value="value1">5</option>
+                        <option value="value2">4</option>
+                        <option value="value3">3</option>
+                    </select>
+                </div>
+                <div class="select-item">
+                    <div class="select-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#949494" id="baseline-arrow_drop_down-24px"
+                             width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Path_20" d="M7 10l5 5 5-5z" class="cls-1" data-name="Path 20"/>
+                        </svg>
+                    </div>
+                    <select name="select">
+                        <option value="value">Любая страна</option>
+                        <option value="value1">Россия</option>
+                        <option value="value2">США</option>
+                        <option value="value3">Канада</option>
+                    </select>
+                </div>
+            </div>
+            <div class="carousel-wrap">
+                <div class="owl-carousel" id="owl-carousel2">
+                    <a href="#" class="item">
+                        <img src="img/owl1.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl2.png">
+                        <div class="film-name">Очень странные дела</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#"class="item">
+                        <img src="img/owl3.png">
+                        <div class="film-name">Табу</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl4.png">
+                        <div class="film-name">Враг внутри</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl1.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl2.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl3.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl4.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl1.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl2.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl3.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl4.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page__film-carousel page__film-carousel-rec">
+            <h2>Рекомендации</h2>
+            <div class="carousel-wrap">
+                <div class="owl-carousel" id="owl-carousel3">
+                    <a href="#" class="item">
+                        <img src="img/owl1.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl2.png">
+                        <div class="film-name">Очень странные дела</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#"class="item">
+                        <img src="img/owl3.png">
+                        <div class="film-name">Табу</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl4.png">
+                        <div class="film-name">Враг внутри</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl1.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl2.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl3.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl4.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl1.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl2.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl3.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="img/owl4.png">
+                        <div class="film-name">Озарк</div>
+                        <div class="film-genre">триллер, драма</div>
+                        <div class="film-year">2017</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+
+</footer>
+
+</body>
